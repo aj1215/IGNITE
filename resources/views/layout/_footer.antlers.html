@@ -1,0 +1,12 @@
+{{# The sites footer rendered on each page. #}}
+<footer class="w-full py-4">
+    <div class="fluid-container text-xs">
+        © 2021 {{ unless (now | format:Y) == '2021' }} - {{ now | format:Y }}{{ /unless }} IGNITE Creative
+        {{ if social_media:social_media }}
+            - 
+            {{ social_media:social_media }}
+                <a href="{{ prefix }}{{ url }}" rel="noopener" aria-label="{{ type | title }}" target="_blank">{{ type | title }}</a>
+            {{ /social_media:social_media }}
+        {{ /if }}
+    </div>
+</footer>

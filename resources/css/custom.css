@@ -1,0 +1,38 @@
+/* If you don't want to use the JS in CSS syntax from `tailwind.config.site.js` you can add your own custom CSS here. Use different layers to make sure your CSS either get's purged or not: https://tailwindcss.com/docs/functions-and-directives#layer. CSS in the base layer won't get purged. */
+
+@layer base {
+
+}
+
+@layer components {
+
+}
+
+@layer utilities {
+
+    .bounce-right {
+        -webkit-animation: bounceRight 2s infinite;
+        animation: bounceRight 2s infinite;
+        float:right;
+      }
+
+      @keyframes bounceRight {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          -ms-transform: translateX(0);
+          transform: translateX(0);
+        }
+        40% {
+          -ms-transform: translateX(-30px);
+          transform: translateX(-30px);
+        }
+        60% {
+          -ms-transform: translateX(-15px);
+          transform: translateX(-15px);
+        }
+      }
+
+}

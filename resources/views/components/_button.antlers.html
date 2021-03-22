@@ -1,0 +1,18 @@
+{{# A single button. Faux is used when a button is displayed inside a link (for example in link blocks). #}}
+<{{ tag or 'a' }}
+    {{ attribute }}
+    class="font-bold {{ class }}
+        {{ if button_type == 'inline' }}
+            underline
+            {{ inverted ? 'text-white' : 'text-primary-600' }}
+        {{ else }}
+            inline-flex items-center py-3 px-4 border-2 leading-none uppercase tracking-widest text-sm no-underline select-none whitespace-nowrap
+            {{ inverted ? 'border-white text-white' : 'border-primary-600 text-primary-700' }}
+        {{ /if }}
+    "
+    {{ unless faux }}
+        {{ partial:components/button_attributes }}
+    {{ /unless }}
+>
+    {{ label }}
+</{{ tag or 'a' }}>

@@ -1,0 +1,37 @@
+sections:
+  general:
+    display: General
+    fields:
+      -
+        handle: section_general
+        field:
+          type: section
+          listable: hidden
+          display: 'General configuration'
+          instructions: 'Global site configuration options.'
+      -
+        handle: global_logo
+        field:
+          mode: grid
+          container: brand_assets
+          restrict: true
+          allow_uploads: true
+          max_files: 1
+          display: 'Global Logo'
+          type: assets
+          icon: assets
+          listable: true
+          validate:
+            - required
+  error_messages:
+    display: 'Error messages'
+    fields:
+      -
+        handle: section_404
+        field:
+          type: section
+          listable: hidden
+          display: '404 error'
+      -
+        import: error_message
+        prefix: '404_'

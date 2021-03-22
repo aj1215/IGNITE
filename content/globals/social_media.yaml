@@ -1,0 +1,13 @@
+title: 'Social media'
+data:
+  social_media:
+    -
+      url: clicktoignite
+      prefix: 'https://www.facebook.com/'
+      type: facebook
+      enabled: true
+    -
+      url: clicktoignite
+      prefix: 'https://www.instagram.com/'
+      type: instagram
+      enabled: true

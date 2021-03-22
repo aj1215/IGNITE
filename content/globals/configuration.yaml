@@ -1,0 +1,5 @@
+title: Configuration
+data:
+  global_logo: logo_orange.png
+  404_title: 'Page not found'
+  404_text: 'The page you were looking for is not available (anymore).'

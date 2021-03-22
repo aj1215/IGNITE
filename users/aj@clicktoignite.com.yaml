@@ -1,0 +1,8 @@
+name: AJ
+super: true
+id: 428a333e-05bf-45d6-b6c7-784c087b2235
+password_hash: $2y$10$oXTRMS20sojLfgQdS.mrjeQTCktv5EHryPGGLQheglAqxdV6BD3Xa
+preferences:
+  assets:
+    brand_assets:
+      mode: table
